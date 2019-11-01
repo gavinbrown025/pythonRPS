@@ -13,7 +13,7 @@ while player is False:
 	player=input("Choose Rock, Paper, or Scissors \n")
 
 	#Statrt doing some logic and condition checking	
-	print("computer:", computer, "player:", player)
+	print("Computer:", computer, "\n","Player:", player)
 
 
 	#always check a breaking condition first
@@ -25,10 +25,25 @@ while player is False:
 		print("you chose to quit quitter")
 		exit()
 		
-	else:
-		print("not a tie. now we can check the other conditions")
-		if player == "rock":
-			print("check and see what the computer is, and win or lose")
+	elif player == "rock":
+		if computer == "paper":
+			print("you Lose!", computer, "covers", player, "\n")
+		else:
+			print("You Won!", player, "smashes", computer)
+
+	elif player == "paper":
+		if computer == "scissors":
+			print("You Lose!", computer, "cuts", player, "\n")
+		else:
+			print("You Won!", player, "covers", computer)
+
+	elif player == "scissors":
+		if computer == "rock":
+			print("You Lose!", computer, "smashes", player, "\n")
+		else:
+			print("You Won!", player, "cuts", computer)
+
+		
 
 	player = False
-	computer =choices[randint(0,2)]
+	computer=choices[randint(0,2)]
