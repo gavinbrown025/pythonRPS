@@ -9,10 +9,19 @@ while gameVars.player is False:
 	print("Choose Your Weapon")
 	
 	player=input("Choose Rock(R), Paper(P), or Scissors(S) \n")
-		# if player == "R" or player == "r" or player == "rock"
-		# 	player = rock
-		# elif player ==
-		# if choice == "Y" or choice == "y":
+	# if player == "R" or "r" or "Rock":
+	# 	player == "rock"	
+	
+	# elif player == "P" or player == "p" or player == "Paper":
+	# 	player == "paper"	
+	
+	# elif player == "S" or player == "s" or player == "Scissors":
+	# 	player == "scissors"
+	
+	# else:
+	# 	print("Make a valid choice!" )
+	# 	player = False
+	#	gameVars.computer=gameVars.choices[randint(0,2)]
 
 	#Start doing some logic and condition checking
 	print("========================================")	
@@ -20,14 +29,9 @@ while gameVars.player is False:
 	print("Player:", player)
 	print("========================================")
 	
-
-	#now we want to run comparison
-	
+	#now we want to run comparison	
 	compare.compare(player)
-
 	#end of compare stuff
-	
-
 
 	if gameVars.player_lives is 0:
 		winlose.winorlose("LOST ALL YOUR LIVES")
