@@ -12,7 +12,7 @@ def compare(player):
 		print("You chose to quit quitter")
 		exit()
 		
-	elif player == "rock" or "R":
+	elif player == "rock":
 		if gameVars.computer == "paper":
 			print("You Lose!", gameVars.computer, "covers", player, "\n")
 			gameVars.player_lives = gameVars.player_lives -1
@@ -20,7 +20,7 @@ def compare(player):
 			print("You Won!", player, "smashes", gameVars.computer)
 			gameVars.computer_lives = gameVars.computer_lives -1
 
-	elif player == "paper" or "P":
+	elif player == "paper":
 		if gameVars.computer == "scissors":
 			print("You Lose!", gameVars.computer, "cuts", player, "\n")
 			gameVars.player_lives = gameVars.player_lives -1
@@ -28,12 +28,14 @@ def compare(player):
 			print("You Won!", player, "covers", gameVars.computer)
 			gameVars.computer_lives = gameVars.computer_lives -1
 
-	elif player == "scissors" or "S":
+	elif player == "scissors":
 		if gameVars.computer == "rock":
 			print("You Lose!", gameVars.computer, "smashes", player, "\n")
 			gameVars.player_lives = gameVars.player_lives -1
 		else:
 			print("You Won!", player, "cuts", gameVars.computer)
 			gameVars.computer_lives = gameVars.computer_lives -1
+
+	
 
 	
