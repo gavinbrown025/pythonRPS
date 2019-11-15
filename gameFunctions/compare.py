@@ -7,33 +7,35 @@ def compare(player):
 	if player == gameVars.computer:
 		#we have a tie, no pint in going any further
 		print("Tie, no one wins! Try again!")
-	
-	elif player == "quit":
-		print("You chose to quit quitter")
-		exit()
 		
-	elif player == "rock":
-		if gameVars.computer == "paper":
-			print("You Lose!", gameVars.computer, "covers", player, "\n")
+	elif player == "Rock":
+		if gameVars.computer == "Paper":
+			print("XXXXXXXXXX You Lose! XXXXXXXXX")
+			print ("XXXXX" ,gameVars.computer, "SUFFOCATES", player,"XXXXX")
 			gameVars.player_lives = gameVars.player_lives -1
 		else:
-			print("You Won!", player, "smashes", gameVars.computer)
+			print("+++++++++ You Won! +++++++++"), 
+			print("+++++",player, "BLUDGEONS", gameVars.computer, "+++++")
 			gameVars.computer_lives = gameVars.computer_lives -1
 
-	elif player == "paper":
-		if gameVars.computer == "scissors":
-			print("You Lose!", gameVars.computer, "cuts", player, "\n")
+	elif player == "Paper":
+		if gameVars.computer == "Scissors":
+			print("XXXXXXXXXX You Lose! XXXXXXXXX")
+			print ("XXXXX" ,gameVars.computer, "STABS", player,"XXXXX")
 			gameVars.player_lives = gameVars.player_lives -1
 		else:
-			print("You Won!", player, "covers", gameVars.computer)
+			print("+++++++++ You Won! +++++++++"), 
+			print("+++++",player, "SUFFOCATES", gameVars.computer, "+++++")
 			gameVars.computer_lives = gameVars.computer_lives -1
 
-	elif player == "scissors":
-		if gameVars.computer == "rock":
-			print("You Lose!", gameVars.computer, "smashes", player, "\n")
+	elif player == "Scissors":
+		if gameVars.computer == "Rock":
+			print("XXXXXXXXXX You Lose! XXXXXXXXX")
+			print ("XXXXX" ,gameVars.computer, "BLUDGEONS", player,"XXXXX")
 			gameVars.player_lives = gameVars.player_lives -1
 		else:
-			print("You Won!", player, "cuts", gameVars.computer)
+			print("+++++++++ You Won! +++++++++"), 
+			print("+++++",player, "STABS", gameVars.computer, "+++++")
 			gameVars.computer_lives = gameVars.computer_lives -1
 
 	

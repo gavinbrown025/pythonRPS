@@ -2,7 +2,7 @@ from random import randint
 
 
 #basket of choices ARRAY - index 0, 1, 2.
-choices=["rock", "paper", "scissors"]
+choices=["Rock", "Paper", "Scissors"]
 
 #adding lives -> 
 #when one or the other gets to 0, win / lose
